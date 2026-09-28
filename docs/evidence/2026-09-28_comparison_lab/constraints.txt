@@ -1,0 +1,3 @@
+mlflow<3.13
+filelock>=3.16.0,<3.30
+plotly<7

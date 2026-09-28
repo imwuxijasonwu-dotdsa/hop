@@ -1,0 +1,62 @@
+{
+  "python": "3.11.14",
+  "versions": {
+    "pyqlib": "0.9.7",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "mlflow": "3.12.0",
+    "cvxpy": "1.9.3",
+    "lightgbm": "4.7.0",
+    "ecos": null
+  },
+  "E0_dump_bin": {
+    "exit": 0,
+    "seconds": 2.28,
+    "calendar_days": 80,
+    "stderr_tail": ""
+  },
+  "import_qlib_seconds": 0.09,
+  "E2_mlflow_file_store": {
+    "ok": true,
+    "warnings": [
+      "FutureWarning: The filesystem tracking backend (e.g., './mlruns') is deprecated as of February 2026. Cons"
+    ]
+  },
+  "E3_invested_fraction_buy_and_hold": {
+    "default": 0.9496,
+    "risk_degree_1.0": 1.0
+  },
+  "E4_max_drawdown": {
+    "returns": [
+      -0.1,
+      0.0,
+      0.02
+    ],
+    "qlib_product_mode": 0.0,
+    "qlib_sum_mode": 0.0,
+    "nav_including_A0": -0.1
+  },
+  "E5_enhanced_indexing": {
+    "ecos_installed": false,
+    "returned_weights": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "returned_w0_unchanged": true,
+    "log_tail": []
+  },
+  "E6_cszscore_label": {
+    "1_instrument": {
+      "rows": 5,
+      "nan_labels": 5,
+      "distinct_values": 0
+    },
+    "2_instrument": {
+      "rows": 10,
+      "nan_labels": 0,
+      "distinct_values": 2
+    }
+  }
+}

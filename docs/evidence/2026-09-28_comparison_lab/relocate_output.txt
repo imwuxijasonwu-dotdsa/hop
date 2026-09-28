@@ -1,0 +1,8 @@
+== E1a plain venv: build at temporary path, rename (old path removed)
+shebang: #!/tmp/lab-reloc/.building/bin/python
+python -m style: ok, sys.prefix = /tmp/lab-reloc/final
+console script qrun: exit=127 /tmp/hoplite/workspace/docs/evidence/2026-09-28_comparison_lab/relocate.sh: line 12: final/bin/qrun:
+== E1b uv venv --relocatable: build at temporary path, rename
+console script qrun: exit=0
+== E5b EnhancedIndexingOptimizer after explicitly installing ecos
+ecos 2.0.14 -> weights [0.26, 0.26, 0.24, 0.24]
