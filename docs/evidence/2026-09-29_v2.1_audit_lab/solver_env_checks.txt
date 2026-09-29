@@ -1,0 +1,14 @@
+== E8 CVXPY
+cvxpy 1.9.3 installed_solvers: ['CLARABEL', 'SCS', 'SCIPY', 'HIGHS', 'OSQP']
+default solve: status=optimal solver=OSQP num_iters=50 solve_time_recorded=True
+explicit ECOS: SolverError - The solver ECOS is not installed.
+== E9 second same-lock runtime (uv cache warm, same filesystem)
+envA build seconds: 4.4
+envB build seconds: 1.7
+logical size envB alone: 973M
+physical size of envB after counting cache+envA first (du counts hardlinks once):
+  1.8G	/tmp/lab/uvcache
+  2.9M	/tmp/lab/e9/envA
+  2.9M	/tmp/lab/e9/envB
+numpy core .so link count in envB: 4
+filesystem: overlay

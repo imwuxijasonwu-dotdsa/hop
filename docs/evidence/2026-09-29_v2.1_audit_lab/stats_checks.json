@@ -1,0 +1,74 @@
+{
+  "E10a_selected_best_false_support": {
+    "rho=0.0,k=1": {
+      "naive_false_support": 0.05,
+      "bonferroni": 0.05
+    },
+    "rho=0.0,k=3": {
+      "naive_false_support": 0.142,
+      "bonferroni": 0.0485
+    },
+    "rho=0.0,k=5": {
+      "naive_false_support": 0.2261,
+      "bonferroni": 0.0489
+    },
+    "rho=0.0,k=10": {
+      "naive_false_support": 0.4011,
+      "bonferroni": 0.0485
+    },
+    "rho=0.5,k=1": {
+      "naive_false_support": 0.0504,
+      "bonferroni": 0.0504
+    },
+    "rho=0.5,k=3": {
+      "naive_false_support": 0.119,
+      "bonferroni": 0.043
+    },
+    "rho=0.5,k=5": {
+      "naive_false_support": 0.1663,
+      "bonferroni": 0.04
+    },
+    "rho=0.5,k=10": {
+      "naive_false_support": 0.2461,
+      "bonferroni": 0.0359
+    },
+    "rho=0.8,k=1": {
+      "naive_false_support": 0.0498,
+      "bonferroni": 0.0498
+    },
+    "rho=0.8,k=3": {
+      "naive_false_support": 0.0923,
+      "bonferroni": 0.0337
+    },
+    "rho=0.8,k=5": {
+      "naive_false_support": 0.1172,
+      "bonferroni": 0.0284
+    },
+    "rho=0.8,k=10": {
+      "naive_false_support": 0.1521,
+      "bonferroni": 0.0221
+    }
+  },
+  "E10b_coverage_90pct_overlapping_h5": {
+    "naive_iid": 0.5312,
+    "newey_west_lag4": 0.8126
+  },
+  "E10c_clopper_pearson_95": {
+    "1/20": [
+      0.0013,
+      0.2487
+    ],
+    "2/50": [
+      0.0049,
+      0.1371
+    ],
+    "10/200": [
+      0.0242,
+      0.09
+    ],
+    "50/1000": [
+      0.0373,
+      0.0654
+    ]
+  }
+}

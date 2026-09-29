@@ -1,0 +1,33 @@
+{
+  "ib_async": "2.1.0",
+  "E7a_startup_requests[defaults]": [
+    "reqPositions",
+    "reqOpenOrders",
+    "reqCompletedOrders",
+    "reqAccountUpdates",
+    "reqAccountUpdatesMulti",
+    "reqExecutions"
+  ],
+  "E7a_startup_requests[readonly+StartupFetchNONE]": [
+    "reqPositions"
+  ],
+  "E7b_timeout": {
+    "returned_type": "BarDataList",
+    "returned_len": 0,
+    "raised": false,
+    "client_calls": [
+      [
+        "reqHistoricalData",
+        7
+      ],
+      [
+        "cancelHistoricalData",
+        7
+      ]
+    ]
+  },
+  "E7c_1102[default]": [
+    "reqAccountSummary"
+  ],
+  "E7c_1102[errorEvent -= ib._onError]": []
+}
