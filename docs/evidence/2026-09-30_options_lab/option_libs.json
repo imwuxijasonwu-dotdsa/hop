@@ -1,0 +1,272 @@
+{
+  "versions": {
+    "QuantLib": "1.43",
+    "vollib": "1.0.11",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "E11_grid": {
+    "options_total": 492,
+    "priced_above_0.005": 405
+  },
+  "E11a_european_iv_recovery": {
+    "vollib_lets_be_rational": {
+      "max_abs_err_volpts_all": 38.9211,
+      "ms_per_option": 0.019
+    },
+    "quantlib_analytic": {
+      "max_abs_err_volpts_all": 47.0636,
+      "ms_per_option": 0.023
+    },
+    "failures_all": {
+      "vollib": 18,
+      "quantlib": 18
+    },
+    "vollib_by_identifiability": {
+      "identifiable(vega_1pt>=0.01)": {
+        "n_solved": 288,
+        "n_failed": 0,
+        "max_abs_err_volpts": 0.0
+      },
+      "not_identifiable(vega_1pt<0.01)": {
+        "n_solved": 99,
+        "n_failed": 18,
+        "max_abs_err_volpts": 38.92108709
+      }
+    }
+  },
+  "E12_american_vs_european_iv_bias": [
+    {
+      "flag": "p",
+      "days": 182,
+      "K": 80,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 1.1567,
+      "european_iv_from_american_price": 0.3015,
+      "bias_volpts": 0.15
+    },
+    {
+      "flag": "p",
+      "days": 182,
+      "K": 90,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 3.3955,
+      "european_iv_from_american_price": 0.3033,
+      "bias_volpts": 0.33
+    },
+    {
+      "flag": "p",
+      "days": 182,
+      "K": 100,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 7.4785,
+      "european_iv_from_american_price": 0.3072,
+      "bias_volpts": 0.72
+    },
+    {
+      "flag": "p",
+      "days": 182,
+      "K": 110,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 13.4953,
+      "european_iv_from_american_price": 0.3164,
+      "bias_volpts": 1.64
+    },
+    {
+      "flag": "p",
+      "days": 182,
+      "K": 120,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 21.1865,
+      "european_iv_from_american_price": 0.3371,
+      "bias_volpts": 3.71
+    },
+    {
+      "flag": "p",
+      "days": 182,
+      "K": 130,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 30.1566,
+      "european_iv_from_american_price": 0.3794,
+      "bias_volpts": 7.94
+    },
+    {
+      "flag": "p",
+      "days": 365,
+      "K": 80,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 2.7324,
+      "european_iv_from_american_price": 0.3037,
+      "bias_volpts": 0.37
+    },
+    {
+      "flag": "p",
+      "days": 365,
+      "K": 90,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 5.6776,
+      "european_iv_from_american_price": 0.3067,
+      "bias_volpts": 0.67
+    },
+    {
+      "flag": "p",
+      "days": 365,
+      "K": 100,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 10.0452,
+      "european_iv_from_american_price": 0.3119,
+      "bias_volpts": 1.19
+    },
+    {
+      "flag": "p",
+      "days": 365,
+      "K": 110,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 15.8251,
+      "european_iv_from_american_price": 0.3212,
+      "bias_volpts": 2.12
+    },
+    {
+      "flag": "p",
+      "days": 365,
+      "K": 120,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 22.8901,
+      "european_iv_from_american_price": 0.337,
+      "bias_volpts": 3.7
+    },
+    {
+      "flag": "p",
+      "days": 365,
+      "K": 130,
+      "q": 0.0,
+      "true_vol": 0.3,
+      "american_price": 31.062,
+      "european_iv_from_american_price": 0.3631,
+      "bias_volpts": 6.31
+    },
+    {
+      "flag": "c",
+      "days": 365,
+      "K": 80,
+      "q": 0.03,
+      "true_vol": 0.3,
+      "american_price": 23.7436,
+      "european_iv_from_american_price": 0.3024,
+      "bias_volpts": 0.24
+    },
+    {
+      "flag": "c",
+      "days": 365,
+      "K": 90,
+      "q": 0.03,
+      "true_vol": 0.3,
+      "american_price": 17.3022,
+      "european_iv_from_american_price": 0.3008,
+      "bias_volpts": 0.08
+    },
+    {
+      "flag": "c",
+      "days": 365,
+      "K": 100,
+      "q": 0.03,
+      "true_vol": 0.3,
+      "american_price": 12.2329,
+      "european_iv_from_american_price": 0.3003,
+      "bias_volpts": 0.03
+    },
+    {
+      "flag": "c",
+      "days": 365,
+      "K": 110,
+      "q": 0.03,
+      "true_vol": 0.3,
+      "american_price": 8.4282,
+      "european_iv_from_american_price": 0.3001,
+      "bias_volpts": 0.01
+    },
+    {
+      "flag": "c",
+      "days": 365,
+      "K": 120,
+      "q": 0.03,
+      "true_vol": 0.3,
+      "american_price": 5.6839,
+      "european_iv_from_american_price": 0.3001,
+      "bias_volpts": 0.01
+    },
+    {
+      "flag": "c",
+      "days": 365,
+      "K": 130,
+      "q": 0.03,
+      "true_vol": 0.3,
+      "american_price": 3.7675,
+      "european_iv_from_american_price": 0.3,
+      "bias_volpts": 0.0
+    }
+  ],
+  "E13_american_engines": {
+    "fd_400x400": {
+      "ms_per_price": 7.523,
+      "max_abs_diff_vs_fd": 0.0
+    },
+    "binomial_crr_801": {
+      "ms_per_price": 3.426,
+      "max_abs_diff_vs_fd": 0.00497
+    },
+    "barone_adesi_whaley": {
+      "ms_per_price": 0.014,
+      "max_abs_diff_vs_fd": 0.13842
+    },
+    "bjerksund_stensland": {
+      "ms_per_price": 0.017,
+      "max_abs_diff_vs_fd": 0.13634
+    },
+    "american_iv_consistent_fd_rootfind": {
+      "ms_per_option": 106.4,
+      "max_abs_err_volpts_when_solved": 8.4197,
+      "unsolved": [],
+      "cases_with_err_over_0.01volpt": [
+        {
+          "K": 130,
+          "days": 30,
+          "consistent_engine_iv_err_volpts": 8.4197,
+          "price_minus_intrinsic": 0.0
+        }
+      ]
+    },
+    "american_iv_via_quantlib": {
+      "ms_per_option": 15.53,
+      "solved": 17,
+      "of": 18,
+      "max_abs_err_volpts_when_solved": 1.8437,
+      "not_identifiable": [
+        {
+          "K": 120,
+          "days": 30,
+          "builtin_iv_err_volpts": -1.844,
+          "price_minus_intrinsic": 0.0
+        },
+        {
+          "K": 130,
+          "days": 30,
+          "price": 30.0,
+          "intrinsic": 30.0,
+          "error": "root not bracketed: f[0.0001,5] -> [2.398082e-12,4.605261e+0"
+        }
+      ]
+    }
+  }
+}
