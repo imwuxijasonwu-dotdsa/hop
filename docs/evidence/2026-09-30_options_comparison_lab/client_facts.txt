@@ -1,0 +1,18 @@
+== S1 official TWS API (Mac/Unix stable zip from interactivebrokers.github.io)
+download http=200 bytes=11412955
+version: "major": 10, "minor": 50, "micro": 2
+license (setup.py): license="GPL-3.0-or-later"
+LICENSE file first line: GNU GENERAL PUBLIC LICENSE
+install_requires: install_requires=["protobuf==5.29.5"]
+MAX_CLIENT_VER -> MAX_CLIENT_VER = UNIFIED_VERSION_COND_ORDER_WITH_OVERNIGHT_PARAM (UNIFIED_VERSION_COND_ORDER_WITH_OVERNIGHT_PARAM = 226)
+settlementMethod parsed: 1 occurrence(s) in decoder_utils.py
+reader thread: 1
+volumes-in-shares server version: MIN_SERVER_VER_MARKET_DATA_VOLUMES_IN_SHARES = 220
+== S2 PyPI package named ibapi
+latest 9.81.1.post1 | releases ['9.81.1', '9.81.1.post1']
+== S3 ib_async
+latest 2.1.0 | license BSD | last upload 2025-12-08
+MaxClientVersion: ['178']
+settlementMethod in contract.py/decoder.py: False False
+protobuf referenced: False
+latest commit on default branch: 2025-12-06

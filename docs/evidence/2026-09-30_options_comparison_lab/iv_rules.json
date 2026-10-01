@@ -1,0 +1,76 @@
+{
+  "versions": {
+    "QuantLib": "1.43",
+    "vollib": "1.0.11",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "E14_mid_iv_vs_avg_of_side_ivs": {
+    "n": 142,
+    "median_diff_volpts": 0.003,
+    "max_diff_volpts": 2.236,
+    "worst_case": {
+      "days": 30,
+      "K": 110.0,
+      "flag": "p",
+      "bid": 9.7,
+      "ask": 10.29
+    }
+  },
+  "E15_identifiability_rules": {
+    "chain_size": 246,
+    "pass_fixed_vega_rule": 164,
+    "of_which_iv_interval_wider_than_5_volpts_or_bid_unsolvable": 40,
+    "examples": [
+      {
+        "days": 3,
+        "K": 97.5,
+        "flag": "c",
+        "bid": 2.6,
+        "ask": 2.76,
+        "vega_per_volpt": 0.0191,
+        "iv_interval_volpts": 8.61
+      },
+      {
+        "days": 3,
+        "K": 102.5,
+        "flag": "p",
+        "bid": 2.55,
+        "ask": 2.71,
+        "vega_per_volpt": 0.0203,
+        "iv_interval_volpts": 8.14
+      },
+      {
+        "days": 7,
+        "K": 95.0,
+        "flag": "c",
+        "bid": 5.02,
+        "ask": 5.33,
+        "vega_per_volpt": 0.0184,
+        "iv_interval_volpts": null
+      },
+      {
+        "days": 7,
+        "K": 105.0,
+        "flag": "p",
+        "bid": 4.9,
+        "ask": 5.2,
+        "vega_per_volpt": 0.0209,
+        "iv_interval_volpts": null
+      }
+    ],
+    "half_spread_over_vega_vs_exact_half_width_corr": 0.9964
+  },
+  "E16_mixed_model_scenario": {
+    "contract": "American put K=100, 45 days, vol 30%, spot 100; shock = spot -5%",
+    "vendor_model_price": 4.0065,
+    "local_model_price": 3.9571,
+    "model_gap_at_zero_shock_per_contract_usd": -4.94,
+    "consistent_local_pnl_per_contract_usd": 281.27,
+    "mixed_pnl_local_shock_minus_vendor_base_usd": 276.33,
+    "delta_vendor": -0.4671,
+    "delta_local": -0.4643,
+    "time_only_1d_consistent_pnl_usd": -4.16,
+    "time_only_1d_mixed_pnl_usd": -9.1
+  }
+}
