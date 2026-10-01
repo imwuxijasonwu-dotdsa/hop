@@ -1,0 +1,56 @@
+{
+  "versions": {
+    "QuantLib": "1.43",
+    "scipy": "1.18.1"
+  },
+  "E17a_scenario_base_rule": {
+    "contract": "American put K=100, 45 days, spot 100; mark from vendor-like model (r=4.0%, q=0.5%, vol 30%)",
+    "mark": 4.0065,
+    "calibrated_local_vol": 0.30355,
+    "calibration_status": "ok",
+    "calibrated_base_minus_mark_usd": 3e-06,
+    "scenario_pnl_per_contract_usd": {
+      "time_plus_1d": {
+        "mixed(base=mark, shock=uncalibrated local)": -9.1,
+        "consistent_uncalibrated(base, shock both local@30%)": -4.16,
+        "calibrated_to_mark(base, shock both local@cal_vol)": -4.21,
+        "vendor_reference(base, shock both vendor model)": -4.26
+      },
+      "spot_minus_5pct": {
+        "mixed(base=mark, shock=uncalibrated local)": 276.33,
+        "consistent_uncalibrated(base, shock both local@30%)": 281.27,
+        "calibrated_to_mark(base, shock both local@cal_vol)": 280.64,
+        "vendor_reference(base, shock both vendor model)": 282.25
+      },
+      "vol_plus_5pts": {
+        "mixed(base=mark, shock=uncalibrated local)": 64.62,
+        "consistent_uncalibrated(base, shock both local@30%)": 69.56,
+        "calibrated_to_mark(base, shock both local@cal_vol)": 69.56,
+        "vendor_reference(base, shock both vendor model)": 69.63
+      }
+    }
+  },
+  "E17b_non_identifiable_leg": {
+    "contract": "American put K=130, 30 days",
+    "mark": 30.0,
+    "status": "not_identifiable(mark_at_or_below_intrinsic)"
+  },
+  "E17c_bull_put_spread_grid_cost": {
+    "grid": "spot {-10,-5,0,5,10}% x vol {-5,0,+5} pts x days {0,14,28}",
+    "note": "calibration always uses the FD engine",
+    "timing": {
+      "fd": {
+        "calibration_ms_total": 128.6,
+        "grid_pricings": 90,
+        "grid_ms_total": 683.1,
+        "ms_per_pricing": 7.59
+      },
+      "crr": {
+        "calibration_ms_total": 129.5,
+        "grid_pricings": 90,
+        "grid_ms_total": 309.9,
+        "ms_per_pricing": 3.44
+      }
+    }
+  }
+}

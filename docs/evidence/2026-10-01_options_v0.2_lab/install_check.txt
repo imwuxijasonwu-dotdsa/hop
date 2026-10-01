@@ -1,0 +1,21 @@
+== A direct URL dependency
+A: FAILED
+  Failed to extract archive: ibapi @
+  Bad compressed size (got 00000000, expected 00000002) for file:
+== B download, verify, extract, build wheel, lock by hash
+archive sha256: 673129e5cba58c4d77bc40647265f84ea42f605eccf88fa4c1221d62d12454f3
+python zipfile: extracted 252 members; testzip first bad member: None
+built: ibapi-10.50.2-py3-none-any.whl
+compile: ok
+locked packages: 5
+ibapi==10.50.2
+numpy==2.5.3
+protobuf==5.29.5
+quantlib==1.43
+scipy==1.18.1
+sync --require-hashes: ok
+Checked 5 packages in 0.52ms
+All installed packages are compatible
+ibapi 10.50.2 | protobuf 5.29.5 | QuantLib 1.43 | numpy 2.5.3 | scipy 1.18.1
+ibapi license metadata: GPL-3.0-or-later
+TWSSyncWrapper has order methods: True True
